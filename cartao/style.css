@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Inria Sans", serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0B1E;
+}
+
+.container{
+    position: relative;
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+}
+
+header img{
+    width: 70%;
+}
+
+.robo_icon{
+    width: 15%;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.skills{
+    width: 35%;
+}
+
+.sociais{
+    display: flex;
+    align-items: center;
+}
+
+aside{
+    padding: 3rem;
+}
+
+.sociais img{
+    width: 2.7rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5{
+    color: #BCB3F3;
+    font-size: 21px;
+    padding: .3rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    border: solid #fff;
+    background: none;
+    
+    padding: .7rem;
+    font-size: 21px;
+}
+
+/* skills effect */
+
+/* .container_skills{
+    display: grid;
+    place-items: center;
+     min-height: 100vh; 
+} */
+
+.central_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: #fff;
+}
+
+.central_icon img{
+    width: 4rem;
+}
+
+.skill_icon_group p{
+    color: #fff;
+}
+
+.skill_icon_group img{
+    width: 4rem
+}
+  
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: anim 20s linear infinite;
+}
+  
+@keyframes anim {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+  .text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2rem;
+    transform-origin: 0 100px;
+  }
+  
